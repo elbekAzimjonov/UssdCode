@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01B4FF"
+    tools:context=".Fragments.BannerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="25dp"
+                android:background="#228BD6"
+                android:elevation="20dp"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#228BD6">
+
+                    <TextView
+                        android:id="@+id/tarifNomi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Просто 10"
+                        android:textColor="@color/yellow"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/tarifTime"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_toLeftOf="@+id/tarifMB"
+                        android:src="@drawable/call" />
+
+                    <ImageView
+                        android:id="@+id/tarifMB"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/mb" />
+
+                    <TextView
+                        android:id="@+id/mb_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tarifMB"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:text="10 MB"
+                        android:textColor="@color/yellow"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/tarifSms"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_toEndOf="@+id/tarifMB"
+                        android:src="@drawable/sms" />
+
+                    <TextView
+                        android:id="@+id/sms_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tarifSms"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/mb_title"
+                        android:text="10 Sms"
+                        android:textColor="@color/yellow"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/time_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tarifTime"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="37dp"
+                        android:layout_toLeftOf="@+id/mb_title"
+                        android:text="10 Min"
+                        android:textColor="@color/yellow"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tarifNarxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mb_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="10 000 сум в месяц"
+                        android:textColor="#68D2FF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="132dp"
+                android:background="@drawable/ic_rectangle_2">
+
+                <TextView
+                    android:id="@+id/statusName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:text="Tarif  “Просто 10”"
+                    android:textColor="#228BD6"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/abanentTolovi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statusName"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="19dp"
+                    android:text="Abonent to’lovi:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/abanentNarxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statusName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="33dp"
+                    android:text="10.000 so’m"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/abanentTolovi"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#9C9C9C" />
+
+                <TextView
+                    android:id="@+id/statusAboutt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/porsto10"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/batafsilBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/statusAboutt"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/ic_rectangle_4_1"
+                    android:text="Batafsil"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/ulanishBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/statusAboutt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/ic_rectangle_4"
+                    android:text="Ulanish"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/bace_indicator.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/button_custom.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/custom_status.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/custom_textview.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/default_indicator.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/ic_group.xml" value="0.19333333333333333" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/ic_group_13.xml" value="0.1" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/ic_rectangle_2.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/ic_rectangle_3.xml" value="0.1" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/selected_indicator.xml" value="0.19635416666666666" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/drawable/visible_button.xml" value="0.18888888888888888" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/activity_settings.xml" value="0.14447463768115942" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/activity_wep.xml" value="0.14447463768115942" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/content_splash.xml" value="0.14990942028985507" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/custom_tablayout.xml" value="0.2" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/customtabitemone.xml" value="0.25" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_banner.xml" value="0.18" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_internet.xml" value="0.16" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_internet_day.xml" value="0.161231884057971" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_language.xml" value="0.14492753623188406" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_minutlar.xml" value="0.14447463768115942" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_settings.xml" value="0.12" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_sms.xml" value="0.22" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_sms_day.xml" value="0.161231884057971" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_sms_month.xml" value="0.161231884057971" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_sms_week.xml" value="0.161231884057971" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_tariflar.xml" value="0.18" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_ussd.xml" value="0.1503623188405797" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/fragment_xizmatlar.xml" value="0.14492753623188406" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/internet_paketlar_item.xml" value="0.22" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/middle_bottom_appbar.xml" value="0.33" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/nav_header.xml" value="0.15534420289855072" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/slider_item.xml" value="0.22" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/sms_paketlar_item.xml" value="0.22" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/layout/status_item.xml" value="0.16" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/menu/instructor_bottom_nav.xml" value="0.18" />
+        <entry key="..\:/project/UssdCode/app/src/main/res/menu/nav_menu.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

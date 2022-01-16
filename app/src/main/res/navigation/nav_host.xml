@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.elbek.ussdcode.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_bannerFragment"
+            app:destination="@id/bannerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_smsFragment"
+            app:destination="@id/smsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_internetFragment"
+            app:destination="@id/internetFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tariflarFragment"
+            app:destination="@id/tariflarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ussdFragment"
+            app:destination="@id/ussdFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_xizmatlarFragment"
+            app:destination="@id/xizmatlarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_minutlarFragment"
+            app:destination="@id/minutlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bannerFragment"
+        android:name="com.elbek.ussdcode.Fragments.BannerFragment"
+        android:label="fragment_banner"
+        tools:layout="@layout/fragment_banner" >
+        <argument
+            android:name="statusName"
+            app:argType="string"
+            android:defaultValue="statusName" />
+        <argument
+            android:name="statusPrice"
+            app:argType="string"
+            android:defaultValue="statusPrice" />
+        <argument
+            android:name="slide"
+            app:argType="com.elbek.ussdcode.models.Slides" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.elbek.ussdcode.Fragments.sms.SmsFragment"
+        android:label="fragment_internet"
+        tools:layout="@layout/fragment_sms" />
+    <fragment
+        android:id="@+id/internetFragment"
+        android:name="com.elbek.ussdcode.Fragments.internet.InternetFragment"
+        android:label="fragment_internet"
+        tools:layout="@layout/fragment_internet" />
+    <fragment
+        android:id="@+id/tariflarFragment"
+        android:name="com.elbek.ussdcode.Fragments.TariflarFragment"
+        android:label="fragment_tariflar"
+        tools:layout="@layout/fragment_tariflar" />
+    <fragment
+        android:id="@+id/ussdFragment"
+        android:name="com.elbek.ussdcode.Fragments.UssdFragment"
+        android:label="fragment_ussd"
+        tools:layout="@layout/fragment_ussd" />
+    <fragment
+        android:id="@+id/xizmatlarFragment"
+        android:name="com.elbek.ussdcode.Fragments.XizmatlarFragment"
+        android:label="fragment_xizmatlar"
+        tools:layout="@layout/fragment_xizmatlar" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.elbek.ussdcode.Fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/minutlarFragment"
+        android:name="com.elbek.ussdcode.Fragments.MinutlarFragment"
+        android:label="fragment_minutlar"
+        tools:layout="@layout/fragment_minutlar" />
+
+</navigation>

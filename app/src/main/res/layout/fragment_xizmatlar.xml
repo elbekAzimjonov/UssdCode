@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#01B4FF"
+    tools:context=".Fragments.XizmatlarFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:outlineSpotShadowColor="#01B4FF"
+        android:outlineAmbientShadowColor="#01B4FF"
+        android:id="@+id/appbarlayout"
+        android:layout_height="wrap_content"
+        tools:targetApi="p">
+
+        <androidx.appcompat.widget.Toolbar
+            app:title="Xizmatlar"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            android:id="@+id/back_xizmatlar"
+            android:outlineSpotShadowColor="#01B4FF"
+            android:outlineAmbientShadowColor="#01B4FF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:backgroundTint="#01B4FF" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@+id/appbarlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/ic_rectangle_2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/xizmatlarRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="15dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/status_item" />
+    </RelativeLayout>
+
+</RelativeLayout>

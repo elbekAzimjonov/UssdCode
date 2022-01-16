@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="#01B4FF"
+            android:outlineSpotShadowColor="#01B4FF"
+            app:elevation="0dp"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="p">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/navigation_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#01B4FF"
+                    android:outlineAmbientShadowColor="#01B4FF"
+                    android:outlineSpotShadowColor="#01B4FF"
+                    app:navigationIcon="@drawable/ic_baseline_menu_24"
+                    app:titleTextColor="@android:color/white" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/shareTool"
+                    android:layout_width="50dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:navigationIcon="@drawable/ic_baseline_share_24"
+                    app:titleTextColor="@android:color/white" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/telegramSend"
+                    android:layout_width="50dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/shareTool"
+                    app:navigationIcon="@drawable/ic_send"
+                    app:titleTextColor="@android:color/white" />
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#01B4FF"
+            app:layout_constraintTop_toBottomOf="@+id/appbarlayout"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/uzmobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/uzmobile"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/uzmobile"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:id="@+id/national_operator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uzmobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Milliy Operator"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/slider_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/national_operator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="13dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slider_pager"
+                app:tabBackground="@drawable/bace_indicator"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="266dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="380dp"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/xizmat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Xizmat"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/tarif"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/tarif" />
+
+                <TextView
+                    android:id="@+id/tarif_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Tarif"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ussd"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="24dp"
+                    android:src="@drawable/ussd" />
+
+                <TextView
+                    android:id="@+id/ussd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:text="USSD"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/minut"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/ussd_title"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:id="@+id/minut_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/minut"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Minut"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/internet"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/tarif_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/internet" />
+
+                <TextView
+                    android:id="@+id/internet_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/internet"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="Internet"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/sms"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/xizmat_title"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/cardsms" />
+
+                <TextView
+                    android:id="@+id/sms_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sms"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="35dp"
+                    android:text="SMS"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

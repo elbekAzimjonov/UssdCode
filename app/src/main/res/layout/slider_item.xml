@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#228BD6"
+    app:cardCornerRadius="6dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#228BD6">
+
+    <TextView
+        android:id="@+id/tarifNomi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Просто 10"
+        android:textColor="@color/yellow"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tarifTime"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/tarifMB"
+        android:src="@drawable/call" />
+
+    <ImageView
+        android:id="@+id/tarifMB"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/mb" />
+
+    <TextView
+        android:id="@+id/mb_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tarifMB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="10 MB"
+        android:textColor="@color/yellow"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/tarifSms"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/tarifMB"
+        android:src="@drawable/sms" />
+
+    <TextView
+        android:id="@+id/sms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tarifSms"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/mb_title"
+        android:text="10 Sms"
+        android:textColor="@color/yellow"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tarifTime"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toLeftOf="@+id/mb_title"
+        android:text="10 Min"
+        android:textColor="@color/yellow"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tarifNarxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mb_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="10 000 сум в месяц"
+        android:textColor="#68D2FF"
+        android:textSize="14sp" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

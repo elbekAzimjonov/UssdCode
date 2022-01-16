@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">UssdCode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="uzmobile">Uzmobile</string>
+    // TarifLar Haqida
+    <string name="porsto10">Tarif rejasi  jismoniy va yuridik shaxslar uchun, 2019-yil  1-fеvraldan 30-iyunga qadar taqdim etiladi.
+Kiritilgan daqiqa limiti, MB, SMS 1 kalеndar oyiga taqdim etiladi.
+Tarif rejasiga «O‘zbеktеlеkom» AK sotuvlar ofisi, shuningdek, dilеrlar orqali ulanish mumkin.
+Abonеnt to‘lovini hisoblash abonеnt faol bo‘lganida amalga oshiriladi.  Agar abonеnt hisobida pul mablag‘i yetarli bo‘lmaganligi sababli abonеnt bloklangan bo‘lsa, to‘lov kiritilmaguniga qadar to‘lov hisoblanmaydi.
+ Ushbu tarif rejasiga ulanish yoki unga o‘tishda abonent to‘lovi kalendar oyidagi qolgan kunlar soniga nisbatan, kiritilgan daqiqalar, SMS va Internet trafigi, shuningdek, qolgan kunlar soni bo‘yicha (to‘liq daqiqaga yaxlitlangan holda) hisoblab chiqiladi.</string>
+    <string name="units">Tarif toʻplamlari ichida oʻtishlar – bepul.
+Ushbu tarif rejalaridan boshqa tarif rejalariga oʻtish amalga oshirilayotgan tarif rejasi shartlariga muvofiq.
+“Units” tarif rejalariga boshqa tarif rejalaridan oʻtish bepul.
+“Units” tarif toʻplamlari ichida oʻzaro oʻtilganda resurslar (“Units”) saqlab qolinadi (ularning amal qilish muddatiga muvofiq).
+Ushbu tarif rejalarga har qanday tarif rejalardan (quyidagi tariflar bundan mustasno: Uzmobile M2M, Uzmobile M2M yil, M2M basic, UZCARD GSM, HUMO GSM) har qanday qulay usul bilan (USSD-buyruq, SMS, shaxsiy kabinet, “MyUZTELECOM” ilovasi, sotuv ofislari, call-centre) oʻtish mumkin.</string>
+    <string name="Milliy">O‘zbekiston bo‘yicha daqiqalar/SMS limiti.
+TR doirasida kuniga bittadan 200 tagacha SMS narxi – 10 so‘m, kuniga 200 tadan ortiq SMS narxi - 84 so‘m.
+Ushbu TRga ulanish va boshka TRlariga o‘tish UZTELECOM sotuv va xizmat ko‘rsatish ofislarida hamda dilerlik xizmat ko‘rsatish joylarida amalga oshirilishi mumkin.
+Abonent to‘lovi (keyingi o‘rinlarda - AT) hisoblanishi abonent “faol” holatda bo‘lganida amalga oshiriladi.  Agar abonent hisob raqamida pul mablag‘i yetarli bo‘lmaganligi sababli bloklangan bo‘lsa, AT to‘lov kiritilmagunga qadar hisoblanmaydi.</string>
+    <string name="Talim">“TA‘LIM” tarif rejasi (bundan buyon matnda TR deb yuritiladi) oliy va o‘rta maxsus o‘quv yurtlari (institutlar, universitetlar, litseylar, kollejlar) talabalari va o‘qituvchilari, shuningdek maktab o‘qituvchilari uchun mo‘ljallangan. Ulanishda talabalar talabalik guvohnomasini va o‘qituvchilar esa guvohnomalarini taqdim etishlari kerak.</string>
+    //Sms lar xaqida
+    <string name="smsAbout">Agar abonentda ADSL texnologiyasidan foydalangan holda IPTV xizmati mavjud bolsa tarif rejasida korsatilgan tezlikni taminlash uchun texnik imkoniyat UZTELECOM savdo idorasiga yozma ariza bilan belgilanadi.</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

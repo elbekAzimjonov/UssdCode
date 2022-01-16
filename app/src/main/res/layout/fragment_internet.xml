@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01B4FF"
+    tools:context=".Fragments.internet.InternetFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#01B4FF"
+        android:outlineSpotShadowColor="#01B4FF"
+        tools:targetApi="p">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/backInternet"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#01B4FF"
+            android:outlineAmbientShadowColor="#01B4FF"
+            android:outlineSpotShadowColor="#01B4FF"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Internet paletlar"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/tab_layoutInternet"
+        layout="@layout/custom_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/appbarlayout"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/checkStatusInternet"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tab_layoutInternet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/custom_status"
+        android:text="Trafikni tekshirish"
+        android:textColor="#B08E15"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@+id/checkStatusInternet"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/ic_rectangle_2">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerFragmentInternet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

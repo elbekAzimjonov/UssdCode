@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.LanguageFragment">
+
+    <ImageView
+        android:id="@+id/language_splash"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/splash" />
+
+    <Button
+        android:id="@+id/button_uz"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button_rus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_rectangle_4"
+        android:text="O'zbek"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_rus"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_rectangle_4"
+        android:text="Русский"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_krill"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button_rus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_rectangle_4"
+        android:text="Русский"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:text="DM Mobile Group "
+        android:textColor="#3A3A3A"
+        android:textSize="14sp" />
+</RelativeLayout>

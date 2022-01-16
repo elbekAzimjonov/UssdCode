@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="2dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/kunlik"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/internetBack"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_custom"
+            android:gravity="center"
+            android:text="Kunlik"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/haftalik"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/internetBack"
+            android:layout_marginHorizontal="5dp"
+            android:layout_toRightOf="@+id/kunlik"
+            android:layout_weight="1"
+            android:background="@drawable/button_custom"
+            android:gravity="center"
+            android:text="Haftalik"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/oylik"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/internetBack"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_custom"
+            android:gravity="center"
+            android:text="Oylik"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/kunlik2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/internetBack"
+            android:layout_marginHorizontal="5dp"
+            android:layout_toLeftOf="@id/oylik"
+            android:layout_weight="1"
+            android:background="@drawable/button_custom"
+            android:gravity="center"
+            android:text="Haftalik"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
